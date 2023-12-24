@@ -14,4 +14,16 @@ var addUID = function (obj) {
     return __assign(__assign({}, obj), { uid: uid });
 };
 var docOne = addUID({ name: 'Stefan', age: 40 });
-console.log(docOne);
+//let docTwo = addUID('hello');
+console.log(docOne.name);
+console.log(docOne.age);
+var docThree = {
+    uid: 1,
+    resName: 'person',
+    data: { name: 'Stefan' }
+};
+var docFour = {
+    uid: 2,
+    resName: 'shoppingList',
+    data: ['milk', 'bananas', 'bread']
+};
